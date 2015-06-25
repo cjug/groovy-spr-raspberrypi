@@ -1,0 +1,20 @@
+buildscript {
+  repositories {
+    jcenter()
+  }
+  dependencies {
+    classpath "io.ratpack:ratpack-gradle:0.9.17"
+  }
+}
+
+apply plugin: "io.ratpack.ratpack-groovy"
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+	runtime "org.slf4j:slf4j-simple:1.7.12"
+	compile "com.pi4j:pi4j-core:1.0"
+	compile "org.apache.ivy:ivy:2.4.0"
+}
